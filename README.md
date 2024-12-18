@@ -18,7 +18,7 @@ Before starting, make sure you have the following:
 
 Installation
 
-    Clone the repository:
+Clone the repository:
 
 git clone https://github.com/yourusername/hyprland-setup.git
 cd hyprland-setup
