@@ -17,9 +17,8 @@ Before starting, make sure you have the following:
     A basic understanding of Linux commands.
 
 Installation
-
-Clone the repository:
-git clone https://github.com/Hyprland-Arch-user/Hyprland-On-Arch.git
+'''Clone the repository:
+git clone https://github.com/Hyprland-Arch-user/Hyprland-On-Arch.git'''
 
 cd hyprland-setup
 
