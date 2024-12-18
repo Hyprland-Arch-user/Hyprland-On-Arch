@@ -1,0 +1,29 @@
+[global]
+font = Noto Sans 10
+geometry = "350x70-20+20"
+padding = 8
+frame_width = 0
+transparency = 0.8
+separator_height = 3
+horizontal_alignment = center
+icon_position = left
+format = "<b>%s</b>\n%b"
+
+[urgency_low]
+background = "#000000"
+foreground = "#888888"
+frame_color = "#888888"
+
+[urgency_normal]
+background = "#111111"
+foreground = "#ffffff"
+frame_color = "#5e81ac"
+
+[urgency_critical]
+background = "#300000"
+foreground = "#ff5555"
+frame_color = "#ff5555"
+
+
+
+
