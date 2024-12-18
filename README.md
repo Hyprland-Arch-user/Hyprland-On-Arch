@@ -20,7 +20,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/yourusername/hyprland-setup.git
+git clone https://github.com/Hyprland-Arch-user/Hyprland-On-Arch.git
 cd hyprland-setup
 
 Run the installation script: This script will handle most of the installation and configuration tasks for you.
@@ -33,7 +33,7 @@ Usage
 
 Once the setup is complete, restart your system and start Hyprland by using the following command:
 
-startx
+Hyprland
 
 Or, if you’re using a display manager, you can select Hyprland as your session.
 Customizations
