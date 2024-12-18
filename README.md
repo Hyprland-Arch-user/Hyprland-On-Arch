@@ -17,10 +17,10 @@ Before starting, make sure you have the following:
     A basic understanding of Linux commands.
 
 Installation
-'''Clone the repository:
-git clone https://github.com/Hyprland-Arch-user/Hyprland-On-Arch.git'''
+Clone the repository:
 
-cd hyprland-setup
+    git clone https://github.com/Hyprland-Arch-user/Hyprland-On-Arch.git
+    cd hyprland-setup
 
 Run the installation script: This script will handle most of the installation and configuration tasks for you.
 
