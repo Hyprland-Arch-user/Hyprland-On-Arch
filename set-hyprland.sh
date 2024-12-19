@@ -16,7 +16,7 @@ fi
   #  exit
 #fi
 
-read -p 'Would you like to install required dependencies for hyprland as well as optional ones to improve hyprland's look and feel? (yes,no)' INST
+read -p "Would you like to install required dependencies for hyprland as well as optional ones to improve hyprland's look and feel? (yes,no)" INST
 if [[ $INST == "Yes" || $INST == "yes" ]]; then
 yay -S --noconfirm hyprland kitty swaylock starship waybar wofi ttf-jetbrains-mono-nerd swaylock-effects noto-fonts-emoji alacritty thunar ranger grim slurp xfce4-settings \
 brightnessctl bluez bluez-utils blueman librewolf-bin python-requests xdg-desktop-portal-hyprland polkit-gnome lxappearance nwg-look pulseaudio pipewire pamixer wlogout wlroots \
@@ -26,11 +26,11 @@ systemctl enable --now bluetooth.service
 
 yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 
-read -p 'Would you also like to try rofi along with wofi? (yes,no)' ROFICHOICE 
+read -p "Would you also like to try rofi along with wofi? (yes,no)" ROFICHOICE 
 if [[ $ROFICHOICE == "Yes" || $ROFICHOICE == "yes" ]]; then
 yay -S --noconfirm rofi 
 
-read -p 'Would you like to copy config files which are neccessary for making your hyprland look good? (yes,no)' CFG
+read -p "Would you like to copy config files which are neccessary for making your hyprland look good? (yes,no)" CFG
 if [[ $CFG == "yes" || $CFG == "Yes" ]]; then
 rm -r ~/.config/
 mkdir ~/.config/hypr
@@ -49,6 +49,6 @@ mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
 cp -r Hyprland5.png ~/Pictures/wallpapers/
 
-raed -p 'The script is done would you like to start Hyprland now (yes,no)' STARTCHOICE
+raed -p "The script is done would you like to start Hyprland now (yes,no)" STARTCHOICE
 if [[ $STARTCHOICE == "yes" ||$STARTCHOICE == "Yes" ]]; then
 exec Hyprland
