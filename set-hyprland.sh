@@ -2,19 +2,19 @@
 ISYAY=/sbin/yay
 if [ -f "$ISYAY" ]; then 
     echo -e "yay was located, moving on.\n"
-    yay -Suy
+ #   yay -Suy
 else 
     echo -e "yay was not located, please install yay. Exiting script.\n"
     exit 
 fi
 
-ISPARU=/sbin/paru
-if [ -f "$ISPARU"]; then
-    echo -e "paru was located, movin on.\n"
-else    
-    echo -e "paru was not located, please install paru or yay then retry the script.\n"
-    exit
-fi
+#ISPARU=/sbin/paru
+#if [ -f "$ISPARU"]; then
+ #   echo -e "paru was located, movin on.\n"
+#else    
+ #   echo -e "paru was not located, please install paru or yay then retry the script.\n"
+  #  exit
+#fi
 
 read -n1 -rep 'Would you like to install required dependencies for hyprland as well as optional ones to improve hyprland's look and feel? (yes,no)' INST
 if [[ $INST == "Yes" || $INST == "yes" ]]; then
