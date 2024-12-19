@@ -25,10 +25,12 @@ dracula-gtk-theme dracula-icons-git \
 systemctl enable --now bluetooth.service
 
 yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk
+fi
 
 read -p "Would you also like to try rofi along with wofi? (yes,no)" ROFICHOICE 
 if [[ $ROFICHOICE == "Yes" || $ROFICHOICE == "yes" ]]; then
 yay -S --noconfirm rofi 
+fi
 
 read -p "Would you like to copy config files which are neccessary for making your hyprland look good? (yes,no)" CFG
 if [[ $CFG == "yes" || $CFG == "Yes" ]]; then
@@ -48,7 +50,11 @@ cp -r .config/kitty/* ~/.config/kitty/
 mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
 cp -r Hyprland5.png ~/Pictures/wallpapers/
+fi
 
-raed -p "The script is done would you like to start Hyprland now (yes,no)" STARTCHOICE
+read -p "The script is done would you like to start Hyprland now (yes,no)" STARTCHOICE
 if [[ $STARTCHOICE == "yes" ||$STARTCHOICE == "Yes" ]]; then
 exec Hyprland
+else
+exit
+fi
