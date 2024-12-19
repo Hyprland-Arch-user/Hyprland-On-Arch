@@ -7,7 +7,7 @@ Features
     Custom Configurations: Pre-configured files to help you get started quickly with a customized Hyprland environment.
     System Tweaks: Useful tips and tweaks to improve your Hyprland experience.
     Compatibility: Tested on Arch Linux and compatible with most modern hardware and software setups.
-
+    git installed if it in ot run sudo pacman -S git 
 Prerequisites
 
 Before starting, make sure you have the following:
@@ -24,7 +24,7 @@ Clone the repository:
 
 Run the installation script: This script will handle most of the installation and configuration tasks for you.
 
-    ./install.sh
+    ./set-hyprland.sh
 
     Review and modify configurations: After installation, you may want to tweak the configuration files in the ~/.config/hyprland directory to match your preferences.
 
