@@ -39,5 +39,6 @@ mkdir ~/.config/swaylock/
 cp -r .config/swaylock/* ~/.config/swaylock
 mkdir ~/.config/waybar/
 cp -r .config/waybar/* ~/.config/waybar
-
+mkdir ~/.config/dunst
+cp -r .config/dunst/* ~/.config/dunst/
 
