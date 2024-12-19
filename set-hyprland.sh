@@ -20,7 +20,7 @@ read -p "Would you like to install required dependencies for hyprland as well as
 if [[ $INST == "Yes" || $INST == "yes" ]]; then
 yay -S --noconfirm hyprland kitty swaylock starship waybar wofi ttf-jetbrains-mono-nerd swaylock-effects noto-fonts-emoji alacritty thunar ranger grim slurp xfce4-settings \
 brightnessctl bluez bluez-utils blueman librewolf-bin python-requests xdg-desktop-portal-hyprland polkit-gnome lxappearance nwg-look pulseaudio pipewire pamixer wlogout wlroots \
-dracula-gtk-theme dracula-icons-git \
+dracula-gtk-theme dracula-icons-git pywal \
 
 systemctl enable --now bluetooth.service
 
