@@ -43,5 +43,6 @@ mkdir ~/.config/dunst
 cp -r .config/dunst/* ~/.config/dunst/
 mkdir ~/.config/kitty
 cp -r .config/kitty/* ~/.config/kitty/
-cp -r .bashrc ~/.bashrc
+mv ~/.bashrc ~/.bashrc.bak
+cp .bashrc ~/
 cp -r Hyprland5.png ~/Pictures/wallpapers/
