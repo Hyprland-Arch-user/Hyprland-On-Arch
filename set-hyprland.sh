@@ -35,17 +35,17 @@ fi
 read -p "Would you like to copy config files which are neccessary for making your hyprland look good? (yes,no)" CFG
 if [[ $CFG == "yes" || $CFG == "Yes" ]]; then
 rm -r ~/.config/
-mkdir ~/.config/hypr
+mkdir -p ~/.config/hypr
 cp -r .config/hypr/* ~/.config/hypr/
-mkdir ~/.config/wofi 
+mkdir -p ~/.config/wofi 
 cp -r .config/wofi/* ~/.config/wofi/
-mkdir ~/.config/swaylock/
+mkdir -p ~/.config/swaylock/
 cp -r .config/swaylock/* ~/.config/swaylock
-mkdir ~/.config/waybar/
+mkdir -p  ~/.config/waybar/
 cp -r .config/waybar/* ~/.config/waybar
-mkdir ~/.config/dunst
+mkdir -p ~/.config/dunst
 cp -r .config/dunst/* ~/.config/dunst/
-mkdir ~/.config/kitty
+mkdir -p ~/.config/kitty
 cp -r .config/kitty/* ~/.config/kitty/
 mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
