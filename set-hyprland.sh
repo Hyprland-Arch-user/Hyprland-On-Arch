@@ -1,3 +1,4 @@
+#!/bin/bash
 ISYAY=/sbin/yay
 if [ -f "$ISYAY" ]; then 
     echo -e "yay was located, moving on.\n"
@@ -30,9 +31,13 @@ yay -S --noconfirm rofi
 read -n1 -rep 'Would you like to copy config files which are neccessary for making your hyprland look good? (yes,no)' CFG
 if [[ $CFG == "yes" || $CFG == "Yes" ]]; then
 rm -r ~/.config/
-mkdir hypr
+mkdir ~/.config/hypr
 cp -r .config/hypr/* ~/.config/hypr/
-mkdir wofi 
+mkdir ~/.config/wofi 
 cp -r .config/wofi/* ~/.config/wofi/
+mkdir ~/.config/swaylock/
+cp -r .config/swaylock/* ~/.config/swaylock
+mkdir ~/.config/waybar/
+cp -r .config/waybar/* ~/.config/waybar
 
 
