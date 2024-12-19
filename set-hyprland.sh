@@ -41,4 +41,6 @@ mkdir ~/.config/waybar/
 cp -r .config/waybar/* ~/.config/waybar
 mkdir ~/.config/dunst
 cp -r .config/dunst/* ~/.config/dunst/
-
+mkdir ~/.config/kitty
+cp -r .config/kitty/* ~/.config/kitty/
+cp -r .bashrc ~/.bashrc
