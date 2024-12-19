@@ -16,7 +16,7 @@ fi
   #  exit
 #fi
 
-read -n1 -rep 'Would you like to install required dependencies for hyprland as well as optional ones to improve hyprland's look and feel? (yes,no)' INST
+read -n1 'Would you like to install required dependencies for hyprland as well as optional ones to improve hyprland's look and feel? (yes,no)' INST
 if [[ $INST == "Yes" || $INST == "yes" ]]; then
 yay -S --noconfirm hyprland kitty swaylock starship waybar wofi ttf-jetbrains-mono-nerd swaylock-effects noto-fonts-emoji alacritty thunar ranger grim slurp xfce4-settings \
 brightnessctl bluez bluez-utils blueman librewolf-bin python-requests xdg-desktop-portal-hyprland polkit-gnome lxappearance nwg-look pulseaudio pipewire pamixer wlogout wlroots \
