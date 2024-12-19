@@ -46,3 +46,7 @@ cp -r .config/kitty/* ~/.config/kitty/
 mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
 cp -r Hyprland5.png ~/Pictures/wallpapers/
+
+echo -e 'The script is done would you like to start Hyprland now (yes,no)' STARTCHOICE
+if [[ $STARTCHOICE == "yes" ||$STARTCHOICE == "Yes" ]]; then
+exec Hyprland
