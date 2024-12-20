@@ -23,10 +23,8 @@ brightnessctl bluez bluez-utils blueman librewolf-bin python-requests xdg-deskto
 dracula-gtk-theme dracula-icons-git pywal \
 
 systemctl enable --now bluetooth.service
-
 pacman -S xdg-user-dirs
 xdg-user-dirs-update
-
 yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 fi
 
@@ -53,7 +51,7 @@ cp -r .config/kitty/* ~/.config/kitty/
 mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
 mkdir -p ~/.config/Pictures/wallpapers
-cp -r Hyprland5.png ~/Pictures/wallpapers/
+cp -r hyprland5.png ~/Pictures/wallpapers/
 fi
 
 read -p "The script is done would you like to start Hyprland now (yes,no)" STARTCHOICE
