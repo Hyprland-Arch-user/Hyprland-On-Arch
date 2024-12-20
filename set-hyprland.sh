@@ -27,7 +27,7 @@ systemctl enable --now bluetooth.service
 yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 fi
 
-read -p "Would you also like to try rofi along with wofi? (yes,no)" ROFICHOICE 
+read -p "Would you also like to try rofi along with wofi? If unsure type in no. (yes,no)" ROFICHOICE 
 if [[ $ROFICHOICE == "Yes" || $ROFICHOICE == "yes" ]]; then
 yay -S --noconfirm rofi 
 fi
