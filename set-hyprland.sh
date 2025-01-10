@@ -50,9 +50,10 @@ mkdir -p ~/.config/kitty
 cp -r .config/kitty/* ~/.config/kitty/
 mv ~/.bashrc ~/.bashrc.bak
 cp .bashrc ~/
-mkdir -p ~/.config/Pictures/wallpapers
+mkdir -p ~/Pictures/wallpapers
 cp -r hyprland5.png ~/Pictures/wallpapers/
-fi
+mkdir -p ~/.config/alacritty
+cp -r .config/alacritty/* ~/.config/alacritty/
 
 read -p "The script is done would you like to start Hyprland now (yes,no)" STARTCHOICE
 if [[ $STARTCHOICE == "yes" ||$STARTCHOICE == "Yes" ]]; then
